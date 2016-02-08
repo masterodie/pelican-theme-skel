@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% import "includes/article.html" as a %}
+{% block content %}
+<h1>Archives for {{ SITENAME }}</h1>
+
+<ul id="post-list">
+{% for article in dates %}
+{{ a.archive(article) }}
+{% endfor %}
+</ul>
+{% endblock %}

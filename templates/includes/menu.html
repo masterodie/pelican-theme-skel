@@ -1,0 +1,7 @@
+{% macro link(title, link, icon) %}
+<li>
+    <a href="{{ link }}">
+        <i class="fa fa-{{ icon }}"></i> {{ title }}
+    </a>
+</li>
+{% endmacro %}
